@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21.3sp"
+        android:paddingLeft="18dp"
+        android:id="@+id/no_note"
+        android:lineSpacingExtra="5sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16.7dp"
+        android:textColor="@color/blackTextColor"
+        android:text="No Messages."
+        android:layout_marginBottom="50dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:id="@+id/btn_reload"
+        android:src="@drawable/reload"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16.7dp"
+        android:layout_marginBottom="50dp"/>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:paddingTop="150dp"/>
+
+
+
+</RelativeLayout>

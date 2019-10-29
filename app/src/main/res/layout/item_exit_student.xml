@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/ViewLineColor" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="14dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_margin="7dp"
+            android:padding="2dp"
+            android:src="@drawable/profile" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <customfonts.MyTextView_Roboto_Medium
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Christina Meyers"
+                android:textColor="@color/black_txt_color"
+                android:textSize="14.3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:padding="3dp">
+
+                <CheckBox
+                    android:id="@+id/exist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exist"
+                    android:padding="2dp"
+                    android:textSize="14.1dp"
+                    android:checked="true"/>
+
+                <CheckBox
+                    android:id="@+id/later"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Later"
+                    android:padding="2dp"
+                    android:textSize="14.1dp"
+                    android:layout_marginLeft="16dp"
+                    android:checked="false"/>
+
+            </LinearLayout>
+
+            <customfonts.EditText_Roboto_Regular
+                android:id="@+id/note"
+                android:layout_width="244dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/transparent"
+                android:fontFamily="sans-serif"
+                android:gravity="top"
+                android:hint="What's on your note?"
+                android:lineSpacingExtra="2.7sp"
+                android:padding="8dp"
+                android:paddingTop="3dp"
+                android:textColor="#a0a09e"
+                android:lines="5"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+</LinearLayout>

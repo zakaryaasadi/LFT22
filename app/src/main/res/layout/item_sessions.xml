@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/ViewLineColor" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <customfonts.MyTextView_Roboto_Medium
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Christina Meyers"
+            android:textColor="@color/black_txt_color"
+            android:textSize="14.3dp" />
+
+
+        <customfonts.MyTextView_Roboto_Medium
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="10"
+            android:visibility="gone"
+            android:textColor="@color/redBg"
+            android:textSize="14.3dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>
